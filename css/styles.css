@@ -1,0 +1,180 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-bg-color: #2f303a;
+  --white-bg-color: #ffffff;
+  --crew-bg-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --adress-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--white-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/*Header*/
+header {
+  background-color: var(--white-bg-color);
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.blacklogo {
+  color: var(--title-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Auth nav */
+.auth-nav .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.auth-nav .link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+.hero-title {
+  color: var(--white-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Button */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--crew-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.filter-buttons .button:hover,
+.filter-buttons .button:focus {
+  color: var(--white-bg-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary {
+  color: var(--white-bg-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Advantages */
+.advantages .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* Crew */
+.crew {
+  background-color: var(--crew-bg-color);
+}
+.crew-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.crew-list .description {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Footer */
+.whitelogo {
+  color: var(--white-bg-color);
+}
+footer {
+  background-color: var(--secondary-bg-color);
+}
+/* Address */
+.address {
+  color: var(--white-bg-color);
+  font-style: normal;
+}
+.auth .link {
+  color: var(--adress-text-color);
+  text-decoration: none;
+}
+.auth .link:hover,
+.auth .link:focus {
+  color: var(--white-bg-color);
+}
+
+/* Portfolio */
+.portfolio-items .link {
+  text-decoration: none;
+}
+
+.portfolio-items .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-items .description {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.8;
+}
