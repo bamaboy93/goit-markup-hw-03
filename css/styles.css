@@ -19,6 +19,23 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 /*Header*/
 header {
   background-color: var(--white-bg-color);
@@ -38,6 +55,8 @@ header {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -69,25 +88,33 @@ header {
 /* Hero */
 .hero {
   background-color: var(--secondary-bg-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 /* Button */
 .button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  min-width: 73px;
+
   color: var(--title-text-color);
   background-color: var(--crew-bg-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-decoration: none;
+  cursor: pointer;
 }
 .filter-buttons .button:hover,
 .filter-buttons .button:focus {
@@ -96,19 +123,29 @@ header {
 }
 
 .button.primary {
+  padding: 10px 32px;
+
   color: var(--white-bg-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
 /* Section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-bottom: 0;
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -118,23 +155,35 @@ header {
 
 /* Advantages */
 .advantages .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.advantages p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Crew */
 .crew {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--crew-bg-color);
 }
 .crew-list .title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
 .crew-list .description {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -166,6 +215,8 @@ footer {
 }
 
 .portfolio-items .title {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -174,6 +225,8 @@ footer {
 }
 
 .portfolio-items .description {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.8;
