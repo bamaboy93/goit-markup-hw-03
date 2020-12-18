@@ -36,9 +36,16 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
 }
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 /*Header*/
 header {
   background-color: var(--white-bg-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -53,19 +60,30 @@ header {
 .blacklogo {
   color: var(--title-text-color);
 }
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.header,
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 /* Site nav */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
 }
 
 .site-nav .link:hover,
@@ -75,7 +93,20 @@ header {
 }
 
 /* Auth nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
 .auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -89,11 +120,14 @@ header {
 .hero {
   background-color: var(--secondary-bg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--white-bg-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -154,12 +188,21 @@ header {
 }
 
 /* Advantages */
-.advantages .title {
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+.advantages-item {
+  width: calc((1170px - 90px) / 4);
+}
+.advantages-item .title {
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -167,12 +210,22 @@ header {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.photo {
+  display: flex;
+  justify-content: space-between;
+}
 /* Crew */
 .crew {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--crew-bg-color);
 }
+.crew-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .crew-list .title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -189,16 +242,24 @@ header {
 }
 
 /* Footer */
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .whitelogo {
   color: var(--white-bg-color);
 }
 footer {
   background-color: var(--secondary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* Address */
 .address {
   color: var(--white-bg-color);
   font-style: normal;
+  margin-bottom: 9px;
 }
 .auth .link {
   color: var(--adress-text-color);
@@ -230,4 +291,27 @@ footer {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.8;
+}
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-buttons .item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-items .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.portfolio-items .item {
+  background: var(--white-bg-color);
+  outline: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+.item .item-block {
+  padding: 20px 24px;
 }
